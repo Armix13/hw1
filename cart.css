@@ -1,0 +1,145 @@
+.cart_container {
+    margin-top: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cart {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.cart_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.product_name {
+    flex: 2;
+    text-align: left;
+}
+
+.product_price {
+    flex: 1;
+    text-align: center;
+}
+
+.product_quantity {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.quantity_btn {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quantity_btn:hover {
+    background-color: #ccc;
+}
+
+.product_quantity input {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.total_price {
+    flex: 1;
+    text-align: center;
+}
+
+.cart_total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.total_label {
+    flex: 3;
+    text-align: left;
+}
+
+.total_amount {
+    flex: 1;
+    text-align: center;
+}
+
+.checkout_btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #bdbaba;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.checkout_btn:hover {
+    background-color: #474747;
+}
+
+#no_products {
+    text-align: center;
+    margin-top: 15vw;
+}
+
+#no_products a{
+    color: blue;
+}
+
+.message {
+    position: fixed;
+    top: 7vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 100000;
+}
+
+@media (max-width: 768px) {
+    .cart {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart {
+        width: 100%;
+    }
+
+    .product_name,
+    .product_price,
+    .product_quantity,
+    .total_price {
+        flex: 1;
+        text-align: center;
+    }
+}

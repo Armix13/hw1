@@ -1,0 +1,66 @@
+
+
+section.footer_phone {
+    display: none;
+  }
+  
+  /*-----MEDIA QUERY FOOTER-----*/
+  
+  
+  @media (max-width: 1024px) {
+    section.footer_pc {
+      display: none;
+    }
+  
+    section.footer_phone {
+      display: block;
+    }
+  
+    .footer_phone_logo h3 {
+      display: block;
+    }
+    
+    .footer_phone_container {
+      padding: 5%;
+    }
+  
+    .footer_phone_help_title_container,
+    .footer_phone_servicesexclusive_title_container,
+    .footer_phone_lvearth_title_container,
+    .footer_phone_connected_title_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .endfooter_container_info_end {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .footer_phone_end {
+      margin-top: 5vw;
+    }
+  
+    .footer_phone_separator {
+      width: 100%;
+      border: 1.5px solid whitesmoke;
+      margin: 0;
+    }
+  
+    .footer_phone_row:hover {
+      cursor: pointer;
+    }
+  }
+  
+  @media (max-width: 568px) {
+  
+    .footer_phone_logo h3 {
+      font-size: 100%;
+    }
+  
+    .footer_phone_container p,
+    .footer_phone_container h3 {
+      font-size: 85%;
+    }
+  }

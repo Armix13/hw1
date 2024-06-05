@@ -1,0 +1,358 @@
+/*------BASE STYLE------*/
+
+@font-face {
+  src: url(HelveticaNeue.ttf);
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+p {
+  color: #404040;
+}
+
+a {
+  text-decoration: none;
+  color: #404040;
+}
+
+/*----- HELPERS----*/
+
+/*CENTER*/
+.center_object {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*BIG-TITLE-P*/
+.big_title {
+  font-size: 1.8em;
+}
+/*SMALL-TITLE-P*/
+.small_title {
+  font-size: 1em;
+}
+
+/*UNDERLINE TEXT*/
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+/*-----MAIN COVER -----*/
+.cover_container {
+  top: 7vw;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+    url("./photo/cover_image.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.cover_container_text {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cover_container_text h2,
+.cover_container_text h6,
+.cover_container_text p {
+  margin: 0;
+  padding: 10px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+
+/*----VIDEO START MOUSE OVER JAVASCRIPT------*/
+
+video {
+  margin-top: 7vw;
+  width: 100%;
+}
+
+
+
+/*----MAISON SELECTION----*/
+
+.maison_container {
+  margin-top: 10vw;
+  height: auto;
+  width: 100%;
+}
+
+.maison_container_title {
+  text-align: center;
+}
+
+.maison_container_title p {
+  color: black;
+}
+
+.maison_container_product {
+  display: flex;
+  justify-content: center;
+  margin-top: 4vw;
+  flex-wrap: wrap;
+}
+
+.maison_container_product_items {
+  width: 20%;
+  margin: 0 0.5vw;
+  margin-bottom: 1vw;
+}
+
+.maison_container_product img {
+  width: 100%;
+}
+
+.maison_container_product_items p {
+  margin: 1vw auto;
+}
+
+/*----MEDIA QUERY MAISON-----*/
+
+@media (max-width: 468px) {
+  .maison_container_title p {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 568px) {
+  .maison_container_title p {
+    font-size: 5vw;
+  }
+
+  .maison_container_product_items {
+    width: 40%;
+    margin: 0 2vw;
+    text-align: center;
+    margin-bottom: 5vw;
+  }
+}
+
+/*----CAMPAIGN SECTION----*/
+
+.campaign_container {
+  margin-top: 10vw;
+  width: 100%;
+  height: auto;
+}
+
+.campaign_container_title_big {
+  color: black;
+  letter-spacing: 1px;
+}
+
+.campaign_container_title_small {
+  letter-spacing: 1px;
+}
+
+.campaign_container_cover {
+  margin-top: 3vw;
+  width: 100%;
+  height: 90vh;
+  background-image: url("./photo/campaigncover.png");
+  background-size: cover;
+  background-position: center;
+}
+
+p.campaign_container_title_small:hover {
+  cursor: pointer;
+}
+
+.campaign_container_cover:hover {
+  cursor: pointer;
+}
+
+
+/*----TOP PRODUCT SECTION----*/
+
+.topproduct_container {
+  margin-top: 10vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.topproduct_container_items {
+  width: 20%;
+  margin: 0 0.5vw;
+  height: auto;
+}
+
+.topproduct_container_items_img {
+  background-color: #e2e0df;
+}
+
+.topproduct_container_items img {
+  width: 100%;
+}
+
+.topproduct_container_items_text {
+  margin-top: 1vw;
+}
+
+.topproduct_container_items_text p {
+  margin: 2px;
+  font-size: 0.9em;
+}
+
+.topproduct_container_items_text_price {
+  color: #7a7876;
+}
+
+
+.topproduct_container_items_img {
+  cursor: pointer;
+}
+
+
+
+/*-----MEDIA QUERY TOP PRODUCTS-----*/
+@media (max-width: 568px) {
+  .topproduct_container_items {
+    width: 40%;
+    margin: 5vw 2vw;
+  }
+}
+
+/*----MAN SECTION----*/
+
+.man_container {
+  margin-top: 10vw;
+}
+
+.man_container_title p {
+  letter-spacing: 1px;
+}
+
+.man_container_cover {
+  margin-top: 2.5vw;
+  width: 100%;
+  height: 80vh;
+  background-image: url("./photo/mancover.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/*----MEDIA QUERY MAN SECTION-----*/
+
+@media (max-width: 568px) {
+  .man_container_title .big_title {
+    font-size: 100%;
+  }
+
+  .man_container_cover {
+    height: 70vh;
+  }
+}
+
+/*-----LV SERVICES SECTION------*/
+
+.lvservices_container {
+  margin-top: 15vh;
+}
+
+.lvservices_container_title p {
+  letter-spacing: 1px;
+}
+
+.lvservices_container_title .small_title {
+  line-height: 1.75em;
+}
+
+.lvservices_container_type {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.lvservices_container_type_services,
+.lvservices_container_type_gift,
+.lvservices_container_type_customization {
+  width: 27%;
+  margin: 0 0.5vw;
+}
+
+.lvservices_container_type div img {
+  width: 100%;
+  height: auto;
+}
+
+.lvservices_container_type_services_text,
+.lvservices_container_type_gift_text,
+.lvservices_container_type_customization_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lvservices_container_type_gift_text_paragraph {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+/*-----MEDIA QUERY LVSERVICES-----*/
+
+@media (max-width: 768px) {
+  .lvservices_container_title .big_title {
+    font-size: 100%;
+  }
+
+  .lvservices_container_title .small_title {
+    text-align: center;
+    font-size: 80%;
+    margin: 0 5%;
+  }
+
+  .lvservices_container_type {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lvservices_container_type_services,
+  .lvservices_container_type_gift,
+  .lvservices_container_type_customization {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+}
+
+/*-----SEPARATOR-----*/
+hr.separator {
+  margin-top: 10vh;
+  border-top: 1.5px solid whitesmoke;
+}
+
+
+
+
+/*-----HELPERS JAVASCRIPT-----*/
+
+.hidden {
+  display: none;
+}
+
+.center_text {
+  text-align: center;
+}

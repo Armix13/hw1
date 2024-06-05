@@ -1,0 +1,134 @@
+/*-----GENERALS-----*/
+
+@font-face {
+  src: url(HelveticaNeue.ttf);
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1em;
+}
+
+
+
+/*------NAVBAR-----*/
+
+.nav_container {
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .nav_container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav_container h6 {
+    font-size: 0.7em;
+    letter-spacing: 0.8px;
+    color: #3d3c3c;
+  }
+  
+  .nav_container_start {
+    width: 22.5%;
+    height: 100%;
+  }
+  
+  .nav_container_start div,
+  .nav_container_end div {
+    padding: 0 1vw;
+  }
+  
+  .nav_container_center {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .nav_container_end {
+    width: 22.5%;
+    height: 100%;
+  }
+  
+  .nav_container img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav_hamburger_link_container {
+    top: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 10;
+    padding-left: 4vw;
+    padding-top: 4vw;
+    width: 50%;
+    height: 100%;
+    background-color: whitesmoke;
+  }
+
+  .nav_hamburger_link_container img{
+    margin-bottom: 3vh;
+  }
+
+  .nav_hamburger_link_container span {
+    display: block;
+    margin: 3vh 0;
+    color: black;
+    cursor: pointer;
+  }
+
+  #close_menu {
+    cursor: pointer;
+  }
+
+
+  .hidden {
+    display: none;
+  }
+  
+  /*----MEDIA QUERY NAVBAR-----*/
+  
+  @media (max-width: 910px) {
+    .nav_container {
+      min-height: 6%;
+    }
+  
+    .nav_container_start h6,
+    .nav_container_end h6 {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 512px) {
+    .nav_container_center h1 {
+      font-size: 5vw;
+    }
+    
+    .nav_container_end img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .nav_container_start,
+    .nav_container_end {
+      margin: 0 auto;
+    }
+  
+    .nav_container_start_lens img {
+      display: none;
+    }
+  }
